@@ -151,20 +151,6 @@ section {
 
 .box-4 {
     height: 16.75em;
-    width: 21.5em;
-    margin-left: 1em;
-    margin-right: 1.5em;
-}
-
-.box-5 {
-    height: 16.75em;
-    width: 21.5em;
-    margin-right: 1.5em;
-}
-
-.box-6 {
-    height: 16.75em;
-    width: 21.5em;
 }
 
 .text-box-section {
@@ -205,7 +191,7 @@ section {
 }
 
 .text-space {
-    margin-right: 2em;
+    margin-right: 3em;
 }
 
 .btn-section {
