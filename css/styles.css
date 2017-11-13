@@ -292,16 +292,6 @@ footer {
         margin-top: 1.75em;
     }
 
-/*main*/
-
-    .box-1 {
-        margin-left: 0;
-    }
-
-    .box-4 {
-        margin-left: 0;
-    }
-
 /*section-2*/
 
     .btn-section-2 {
@@ -311,16 +301,6 @@ footer {
 }
 
 @media screen and (max-width: 1030px) and (min-width: 768px) {
-
-/*main*/
-
-    .box-1 {
-        margin-left: 0;
-    }
-
-    .box-4 {
-        margin-left: 0;
-    }
 
 /*section-2*/
 
