@@ -279,7 +279,8 @@ section {
 
 footer {
     background-color: #444243;
-    height: 9.07em;
+    height: auto;
+    padding-bottom: 2em;
 }
 
 .color {
@@ -288,8 +289,9 @@ footer {
 }
 
 .style-brand {
-    color: #ccc;
     float: right;
+    height: 3em;
+    margin-top: 3em;
 }
 
 @media screen and (max-width: 430px) and (min-width: 320px) {
