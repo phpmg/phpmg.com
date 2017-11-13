@@ -90,25 +90,15 @@ main {
     margin-bottom: 1.75em;
 }
 
-.box-1 {
+.box {
     background-color: #f6f6f6;
     height: 18.75em;
-    width: 21.5em;
-    margin-left: 1em;
-    margin-right: 1.5em;
-}
-
-.box-2 {
-    background-color: #f6f6f6;
-    height: 18.75em;
-    width: 21.5em;
-    margin-right: 1.5em;
+    padding: 1em;
+    margin-top: 0.5em;
 }
 
 .box-3 {
     background-color: #2ff583;
-    height: 18.75em;
-    width: 21.5em;
 }
 
 .text-style-box {
@@ -295,6 +285,11 @@ footer {
 .color {
     color: #2ff181;
     font-family: 'Share Tech Mono', monospace;
+}
+
+.style-brand {
+    color: #ccc;
+    float: right;
 }
 
 @media screen and (max-width: 430px) and (min-width: 320px) {
