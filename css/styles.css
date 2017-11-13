@@ -4,7 +4,7 @@
 header {
     background-color: #444243;
     height: auto;
-    padding-bottom: 3.75em;
+    padding-bottom: 2.75em;
 }
 
 .logo {
@@ -13,8 +13,54 @@ header {
     margin-top:3.75em;
 }
 
+.triangle {
+    height: 14px;
+    width: 14px;
+}
+
+.tri-position-1 {
+    margin-left: -1054px;
+    margin-top: 72px;
+}
+
+.tri-position-2 {
+    margin-left: 367px;
+    margin-top: 21px;
+}
+
+.tri-position-3 {
+    margin-left: 1138px;
+    margin-top: 36px;
+}
+
+.tri-position-4 {
+    margin-left: 689px;
+    margin-top: 11px;
+}
+
+.tri-position-5 {
+    margin-left: 944px;
+    margin-top: -51px;
+}
+
+.tri-position-6 {
+    margin-left: -355px;
+    margin-top: 3px;
+}
+
+.tri-position-7 {
+    margin-left: 327px;
+    margin-top: -159px;
+}
+
+.tri-position-8 {
+    margin-left: 165px;
+    margin-top: -159px;
+}
+
+
 .box-text {
-    margin-top: 13.13em;
+    margin-top: 12.13em;
     font-family: 'Hind', sans-serif;
     color: #f6f6f6;
     text-transform: uppercase;
