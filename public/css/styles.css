@@ -88,20 +88,20 @@ header {
 }
 
 .text {
-    color: #6f6c6e;
+    color: #a5a5a5;
     text-align: right;
     font-size: 18px;
-    margin-top: 0.75em;
+    margin-top: 2em;
 }
 
 .text::before {
     content: '';
-    border: solid #6f6c6e;
-    height:1.94em;
-    width:0.25em;
-    margin-right: 0.69em;
-    margin-top: 1.75em;
-    border-width: medium;
+    background: #a5a5a5;
+    height: 1.74em;
+    width: 0.25em;
+    margin-right: 1.30em;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .social-medias {
