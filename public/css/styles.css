@@ -147,9 +147,13 @@ main {
     background-color: #2ff583;
 }
 
-.text-style-box, .text-style-box:hover {
+.text-style-box, a.text-style-box:hover {
     font-family: 'Share Tech Mono', monospace;
     color: #444243;
+}
+
+button.text-style-box {
+    border: 0;
 }
 
 .title-top {
