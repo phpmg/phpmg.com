@@ -93,8 +93,8 @@
     <div class="col-md-offset-2 col-md-8 col-md-offset-2">
       <h2 class="title-main">artigos</h2>
 
-      <div class="row">
-        <div class="col-sm-4">
+      <div class="articles row">
+        <div class="article col-lg-4 col-md-6 col-sm-6 col-xs-12">
           <div class="box">
             <p class="title-top text-style-box">artigos</p>
             <h2 class="text-box text-style-box">arquitetura php: decisões</h2>
@@ -102,7 +102,7 @@
           </div>
         </div>
 
-        <div class="col-sm-4">
+        <div class="article col-lg-4 col-md-6 col-sm-6 col-xs-12">
           <div class="box">
             <p class="title-top text-style-box">artigos, Notícias</p>
             <h2 class="text-box text-style-box">novidades do php 7</h2>
@@ -110,8 +110,8 @@
           </div>
         </div>
 
-        <div class="col-sm-4">
-          <div class="box-3 box">
+        <div class="article col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="box">
             <p class="title-top text-style-box">Wordpress</p>
             <h2 class="text-box text-style-box">dominando o <br> wp-config.php<br> - parte 2</h2>
             <a href="#"><img src="img/ic_trending_flat_black_48dp_2x.png" class="arrow"></a>
@@ -154,16 +154,17 @@
       <h2 class="title-section-2">ajude o projeto</h2>
 
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-7">
           <p class="text-after-stick-2">Doe qualquer quantia pelo PagSeguro</p>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-lg-8 col-md-6 col-sm-6 col-xs-5">
           <!-- <a href="#" class="btn-section text-style-box">doe agora</a> -->
           <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
             <input type="hidden" name="currency" value="BRL">
             <input type="hidden" name="receiverEmail" value="juniorgro@gmail.com">
-            <button type="submit" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!"
+            <button type="submit" name="submit"
+                    alt="Pague com PagSeguro - é rápido, grátis e seguro!"
                     class="btn-section text-style-box">
               doe agora
             </button>
@@ -210,7 +211,7 @@
 
 <script id="event-tmpl" type="application/x-underscore-template">
   <% _.each(events, function (event) { %>
-    <div class="col-sm-4">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
       <div class="event">
         <p class="title-top text-style-box"><%= moment(event.time, 'x').format('MMMM D, ddd · HH:mm') %></p>
 
