@@ -1,6 +1,5 @@
 /*common*/
 a:-webkit-any-link {
-    color: -webkit-link;
     text-decoration: none;
 }
 
@@ -63,7 +62,7 @@ header {
 }
 
 .box-text {
-    margin-top: 12.13em;
+    margin-top: 10.03em;
     font-family: 'Hind', sans-serif;
     color: #f6f6f6;
     text-transform: uppercase;
@@ -116,7 +115,7 @@ header {
 }
 
 .social {
-    margin-top: 10.06em;
+    margin-top: 9.06em;
 }
 
 .space-bet {
@@ -133,8 +132,8 @@ main {
     font-family: 'Hind', sans-serif;
     text-transform: uppercase;
     color: #444243;
-    margin-top: 1.75em;
-    margin-bottom: 1.75em;
+    margin-top: 1.45em;
+    margin-bottom: 1.1em;
 }
 
 .box {
@@ -148,11 +147,8 @@ main {
     background-color: #2ff583;
 }
 
-.text-style-box {
+.text-style-box, .text-style-box:hover {
     font-family: 'Share Tech Mono', monospace;
-}
-
-.text-style-box a {
     color: #444243;
 }
 
@@ -192,8 +188,12 @@ section {
     height: auto;
 }
 
-.box-4 {
-    height: 16.75em;
+.row.show-more {
+    padding: 4em 0;
+}
+
+.event {
+    padding: 0 1.5em;
 }
 
 .text-box-section {
@@ -205,16 +205,21 @@ section {
 .text-after-stick {
     font-family: 'Share Tech Mono', monospace;
     font-size: 1.19em;
+    position: relative;
+    padding-left: 1.7em;
+    margin: 0;
+    line-height: 2em;
 }
 
 .text-after-stick::before {
     content: '';
     background-color: #ff5252;
-    height: 2em;
     width: 0.25em;
-    margin-right: 1.5em;
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .text-after-space {
@@ -230,7 +235,9 @@ section {
     font-family: 'Share Tech Mono', monospace;
     font-size: 1em;
     float: left;
-    margin-left: 2em;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    margin-bottom: 0;
 }
 
 .text-space {
@@ -241,9 +248,9 @@ section {
     background-color: #2ff181;
     text-transform: uppercase;
     font-size: 1.19em;
-    margin:-1em 0 3.75em 0;
-    padding: 1.25em;
-    width: 11.70em;
+    padding: 0.9em;
+    display: inline-block;
+    line-height: initial;
 }
 
 /*section-2*/
@@ -269,17 +276,21 @@ section {
 .text-after-stick-2 {
     font-family: 'Share Tech Mono', monospace;
     font-size: 1.19em;
-    float: left;
-    margin-left: 1em;
     color: #ececec;
+    padding-left: 1.7em;
+    margin: 0;
+    position: relative;
 }
 
-.stick-3 {
-    border: solid #ff5252;
-    height:3.3em;
-    width:0.25em;
-    float: left;
-    border-width: medium;
+.text-after-stick-2::before {
+    content: '';
+    background-color: #ff5252;
+    width: 0.25em;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    bottom: 0.1em;
 }
 
 .btn-section-2 {
@@ -288,7 +299,6 @@ section {
     font-size: 1.19em;
     padding: 1.25em;
     width: 7.70em;
-    float: right;
     margin-top: -0.44em;
 }
 
@@ -344,7 +354,7 @@ footer {
     }
 
     .text {
-        color: #6f6c6e;
+        color: #a5a5a5;
         text-align: right;
         font-size: 13px;
         margin-right: 0;
