@@ -88,25 +88,27 @@ header {
     border-width: medium;
 }
 
-.phrase {
-    font-family: 'Share Tech Mono', monospace;
-}
-
 .text {
     color: #a5a5a5;
-    text-align: right;
-    font-size: 18px;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
-.text::before {
+.phrase {
+    font-family: 'Share Tech Mono', monospace;
+    padding-left: 1.7em;
+    position: relative;
+    font-size: 18px;
+}
+
+.phrase::before {
     content: '';
     background-color: #a5a5a5;
-    height: 1.74em;
     width: 0.25em;
-    margin-right: 1.30em;
-    vertical-align: middle;
-    display: inline-block;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -0.25em;
+    bottom: -0.25em;
 }
 
 .social-medias {
