@@ -148,7 +148,7 @@ main {
     background-color: #2ff583;
 }
 
-.text-style-box, a.text-style-box:hover {
+.text-style-box, a.text-style-box:hover, a.text-style-box:visited {
     font-family: 'Share Tech Mono', monospace;
     color: #444243;
 }
@@ -337,6 +337,10 @@ footer {
 
 #events .jumbotron {
     background-color: #e2e2e2;
+}
+
+#articles .jumbotron {
+    background-color: #ececec;
 }
 
 @media screen and (max-width: 430px) and (min-width: 320px) {

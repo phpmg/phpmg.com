@@ -93,35 +93,17 @@
     <div class="col-md-offset-2 col-md-8 col-md-offset-2">
       <h2 class="title-main">artigos</h2>
 
-      <div class="articles row">
-        <div class="article col-lg-4 col-md-6 col-sm-6 col-xs-12">
-          <div class="box">
-            <p class="title-top text-style-box">artigos</p>
-            <h2 class="text-box text-style-box">arquitetura php: decisões</h2>
-            <a href="#"><img src="img/ic_trending_flat_black_48dp_2x.png" class="arrow"></a>
+      <div id="articles" class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+              <p class="text-center">Carregando...</p>
+            </div>
           </div>
-        </div>
-
-        <div class="article col-lg-4 col-md-6 col-sm-6 col-xs-12">
-          <div class="box">
-            <p class="title-top text-style-box">artigos, Notícias</p>
-            <h2 class="text-box text-style-box">novidades do php 7</h2>
-            <a href="#"><img src="img/ic_trending_flat_black_48dp_2x.png" class="arrow"></a>
-          </div>
-        </div>
-
-        <div class="article col-lg-4 col-md-6 col-sm-6 col-xs-12">
-          <div class="box">
-            <p class="title-top text-style-box">Wordpress</p>
-            <h2 class="text-box text-style-box">dominando o <br> wp-config.php<br> - parte 2</h2>
-            <a href="#"><img src="img/ic_trending_flat_black_48dp_2x.png" class="arrow"></a>
-          </div>
-        </div>
       </div>
 
       <div class="row show-more">
         <div class="col-md-12">
-          <a href="#" class="btn-section text-style-box">ver mais artigos</a>
+          <a href="https://medium.com/phpmg-codeshare" class="btn-section text-style-box">ver mais artigos</a>
         </div>
       </div>
     </div>
@@ -159,7 +141,6 @@
         </div>
 
         <div class="col-lg-8 col-md-6 col-sm-6 col-xs-5">
-          <!-- <a href="#" class="btn-section text-style-box">doe agora</a> -->
           <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
             <input type="hidden" name="currency" value="BRL">
             <input type="hidden" name="receiverEmail" value="juniorgro@gmail.com">
@@ -232,6 +213,27 @@
             <p class="text-after-stick">Local não definido</p>
           </div>
         <% } %>
+      </div>
+    </div>
+  <% }); %>
+</script>
+<script id="article-tmpl" type="application/x-underscore-template">
+  <% _.each(articles, function (article) { %>
+    <div class="article col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      <div class="box">
+        <% if (article.categories.length) { %>
+          <p class="title-top text-style-box">
+            <%= article.categories.join(', ') %>
+          </p>
+        <% } %>
+
+        <h2 class="text-box">
+          <a href="<%= article.link %>" class="text-style-box"><%= article.title %></a>
+        </h2>
+
+        <a href="<%= article.link %>">
+          <img src="img/ic_trending_flat_black_48dp_2x.png" class="arrow">
+        </a>
       </div>
     </div>
   <% }); %>

@@ -2,18 +2,51 @@
   moment().locale('pt-br');
 
   getEvents();
+  getArticles();
 
   function getEvents() {
     $.ajax({
       type: 'GET',
-      url: 'https://powerful-wave-59485.herokuapp.com/events',
+      url: 'https://api.phpmg.com/events',
       data: {},
       dataType: 'json'
-    }).then(function (events) {
+    }).then(function (data) {
+      if (data.status !== true) {
+        return;
+      }
+
       var eventsTmpl = _.template($('#event-tmpl').text());
 
       $('#events').html(eventsTmpl({
-        events: events
+        events: data.response
+      }));
+    });
+  }
+
+  function getArticles() {
+    $.ajax({
+      type: 'GET',
+      url: 'https://api.phpmg.com/articles',
+      data: {},
+      dataType: 'json'
+    }).then(function (data) {
+      if (data.status !== true) {
+        return;
+      }
+
+      var articlesTmpl = _.template($('#article-tmpl').text());
+      var articles = data.response;
+
+      _.each(articles, function (article, index) {
+        article.categories = article.categories.map(function (category) {
+          return category.label;
+        });
+
+        articles[index] = article;
+      });
+
+      $('#articles').html(articlesTmpl({
+        articles: data.response
       }));
     });
   }
