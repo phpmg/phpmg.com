@@ -124,3 +124,4 @@ function typeWritter(texto,idElemento,tempo){
     }, tempo);
 }
 typeWritter('<!-- confira os nossos eventos -->','log',65);
+
