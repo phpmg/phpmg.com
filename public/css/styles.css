@@ -74,17 +74,15 @@ header {
 
 .sub-style {
     font-size: 0.67em;
-    display: block;
 }
 
 .stick {
-    border: solid #6f6c6e;
     height:1.94em;
     width:0.25em;
     float: right;
     margin-right: 1.69em;
     margin-top: 1.75em;
-    border-width: medium;
+    border: medium solid #6f6c6e;
 }
 
 .text {
@@ -259,9 +257,7 @@ section {
 
 /*section-2*/
 .image-back {
-    background-image: url(../img/pexels-photo-440581.fw.png);
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: url(../img/pexels-photo-440581.fw.png) no-repeat center center;
     height: 282px;
 }
 
