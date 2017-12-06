@@ -478,7 +478,7 @@ footer {
     }
 
     .tri-position-2 {
-        margin-left: 209px;
+        margin-left: 31px;
     }
 
     .tri-position-3 {
@@ -488,11 +488,11 @@ footer {
 
     .tri-position-7 {
         margin-left: 86px;
-        margin-top: -285px;
+        margin-top: -60px;
     }
 
     .tri-position-4 {
-        margin-left: 115px;
+        margin-left: 373px;
     }
 
     .tri-position-8 {
@@ -513,6 +513,14 @@ footer {
 
     .article:not(:first-child) {
         margin-top: 1.5em;
+    }
+
+    header {
+        padding-top: 3em;
+    }
+
+    .phrase {
+        font-size: 15px;
     }
 }
 
