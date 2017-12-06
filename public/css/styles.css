@@ -45,6 +45,11 @@ header {
     position: absolute;
 }*/
 
+header > :nth-child(odd) {
+    animation-duration: 20s;
+    animation-delay: 5s;
+}
+
 header > :nth-child(1) {
     left: 10%;
     top: 500px;
