@@ -93,6 +93,12 @@ header > :nth-child(8) {
     border-bottom-color: rgba(133,133,133,0.8);
 }
 
+header > :nth-child(9) {
+    left: 45%;
+    top: 142px;
+    border-bottom-color: rgba(230,61,61,0.9);
+}
+
 
 .box-text {
     margin-top: 10.03em;
