@@ -8,6 +8,7 @@ header {
     background-color: #444243;
     height: auto;
     padding-bottom: 2.75em;
+    position: relative;
 }
 
 .logo {
@@ -16,102 +17,82 @@ header {
     margin-top:3.75em;
 }
 
+@keyframes animTriangles {
+    10% { opacity: 1 }
+    100% { top: 0px }
+}
+
+
 .triangle {
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
+    --arrowSize: 6px;
+    width: 0px;
+    height: 0px;
+    border-left: var(--arrowSize) solid transparent;
+    border-right: var(--arrowSize) solid transparent;
     border-bottom: 12px solid #b6b6b6;
     position: absolute;
-}
+    opacity: 0;
+    animation: animTriangles 10s linear infinite;
+    will-change: opacity, top;
+  }
 
-.triangle:after {
-    content: " ";
-    position: absolute;
-    /*top: 2000px;*/
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    /*box-shadow: $shadows-small;*/
-}
-
-.triangle2 {
+/*.triangle2 {
     width: 0;
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-bottom: 12px solid #858585;
     position: absolute;
+}*/
+
+header > :nth-child(1) {
+    left: 10%;
+    top: 500px;
+    border-bottom-color: rgba(182,182,182,0.6);
 }
 
-.triangle2:after {
-    content: " ";
-    position: absolute;
-    /*top: 2000px;*/
-    width: 2px;
-    height: 2px;
-    background: transparent;
-    /*box-shadow: $shadows-medium;*/
+header > :nth-child(2) {
+    left: 36%;
+    top: 100px;
+    border-bottom-color: rgba(133,133,133,0.8);
 }
 
-.triangle3 {
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 12px solid #e63d3d;
-    position: absolute;
+header > :nth-child(3) {
+    left: 29%;
+    top: 500px;
+    border-bottom-color: rgba(182,182,182,0.3);
 }
 
-.triangle3:after{
-    content: " ";
-    position: absolute;
-    /*top: 2000px;*/
-    width: 3px;
-    height: 3px;
-    background: transparent;
-    /*box-shadow: $shadows-big;*/
+header > :nth-child(4) {
+    left: 59%;
+    top: 600px;
+    border-bottom-color: rgba(230,61,61,0.9);
 }
 
-.tri-position-1 {
-    margin-left: -1054px;
-    margin-top: 72px;
+header > :nth-child(5) {
+    left: 88%;
+    top: 150px;
+    border-bottom-color: rgba(133,133,133,0.5);
 }
 
-.tri-position-2 {
-    margin-left: 367px;
-    margin-top: 34px;
+header > :nth-child(6) {
+    left: 80%;
+    top: 303px;
+    border-bottom-color: rgba(230,61,61,0.9);
 }
 
-.tri-position-3 {
-    margin-left: 1138px;
-    margin-top: 36px;
+header > :nth-child(7) {
+    left: 39%;
+    top: 400px;
+    border-bottom-color: rgba(182,182,182,0.2);
 }
 
-.tri-position-4 {
-    margin-left: 598px;
-    margin-top: 11px;
+header > :nth-child(8) {
+    left: 70%;
+    top: 400px;
+    border-bottom-color: rgba(133,133,133,0.8);
 }
 
-.tri-position-5 {
-    margin-left: 881px;;
-    margin-top: -25px;
-}
-
-.tri-position-6 {
-    margin-left: -355px;
-    margin-top: 3px;
-}
-
-.tri-position-7 {
-    margin-left: 393px;
-    margin-top: -63px;
-}
-
-.tri-position-8 {
-    margin-left: 125px;
-    margin-top: -58px;
-}
 
 .box-text {
     margin-top: 10.03em;
@@ -553,3 +534,13 @@ footer {
         margin-top: 1.5em;
     }
 }
+
+
+/*@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+*/
