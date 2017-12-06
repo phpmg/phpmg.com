@@ -482,7 +482,7 @@ footer {
     }
 
     .tri-position-3 {
-        margin-left: 1195px;
+        margin-left: 301px;
         margin-top: -26px;
     }
 
@@ -492,7 +492,8 @@ footer {
     }
 
     .tri-position-4 {
-        margin-left: 373px;
+        margin-left: 272px;
+        margin-top: -19px;
     }
 
     .tri-position-8 {
@@ -535,6 +536,15 @@ footer {
     .btn-section-2 {
         width: 7.7em;
         margin-right: 2.5em;
+    }
+
+    .tri-position-5 {
+        margin-left: 724px;
+        margin-top: 10px;
+    }
+
+    .tri-position-3 {
+        margin-left: 107px;
     }
 }
 
