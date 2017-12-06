@@ -64,13 +64,13 @@ header > :nth-child(2) {
 
 header > :nth-child(3) {
     left: 29%;
-    top: 500px;
+    top: 450px;
     border-bottom-color: rgba(182,182,182,0.3);
 }
 
 header > :nth-child(4) {
     left: 59%;
-    top: 600px;
+    top: 400px;
     border-bottom-color: rgba(230,61,61,0.9);
 }
 
