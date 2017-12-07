@@ -249,6 +249,10 @@ button.text-style-box {
     margin-top: 2.3em;
 }
 
+h2.text-box {
+    margin-bottom: 2em;
+}
+
 .arrow {
     width: 2.5em;
     height: 1.94em;
@@ -543,12 +547,18 @@ footer {
     }
 }
 
-
-/*@keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+@media screen and (max-width: 1200px) and (min-width: 1599px) {
+    .article .box {
+        min-height: 23em;
+    }
 }
-*/
+
+@media screen and (min-width: 1600px) {
+    .article .box {
+        min-height: 35em;
+    }
+
+    .article .box h2 {
+        font-size: 3em;
+    }
+}
