@@ -10,7 +10,7 @@
       url: 'https://api.phpmg.com/events',
       data: {},
       dataType: 'json'
-    }).then(function (data) {
+    }).done(function (data) {
       if (data.status !== true) {
         return;
       }
@@ -29,7 +29,7 @@
       url: 'https://api.phpmg.com/articles',
       data: {},
       dataType: 'json'
-    }).then(function (data) {
+    }).done(function (data) {
       if (data.status !== true) {
         return;
       }
@@ -50,16 +50,6 @@
       }));
     });
   }
-
-  function typeWritter(texto,idElemento,tempo){
-    var char = texto.split('').reverse();
-    var typer = setInterval(function () {
-        if (!char.length) return clearInterval(typer);
-        var next = char.pop();
-        document.getElementById(idElemento).innerHTML += next;
-    }, tempo);
-  }
-  typeWritter('<!-- confira os nossos eventos -->','log',65);
 })(jQuery);
 
 //! moment.js locale configuration

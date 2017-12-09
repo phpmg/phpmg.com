@@ -22,7 +22,6 @@ header {
     100% { top: 0px }
 }
 
-
 .triangle {
     --arrowSize: 6px;
     width: 0px;
@@ -95,9 +94,8 @@ header > :nth-child(9) {
     border-bottom-color: rgba(230,61,61,0.9);
 }
 
-
 .box-text {
-    margin-top: 10.03em;
+    margin-top: 12em;
     font-family: 'Hind', sans-serif;
     color: #f6f6f6;
     text-transform: uppercase;
@@ -125,31 +123,28 @@ header > :nth-child(9) {
     margin-top: 3em;
 }
 
-
 .phrase {
     font-family: 'Share Tech Mono', monospace;
     padding-right: 0.7em;
-    position: relative;
     font-size: 18px;
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid #c7c7c7;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blinkCaret .75s step-end infinite;
 }
 
-@keyframes animTicker {
-    0% { opacity: 1 }
-    100% { opacity: 0}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-
-.phrase::after {
-    content: '';
-    background-color: #a5a5a5;
-    width: 0.14em;
-    display: block;
-    position: absolute;
-    right: 0;
-    animation: animTicker 0.5s linear infinite;
-    will-change: opacity;
-    top: -0.25em;
-    bottom: -0.25em;
+/* The typewriter cursor effect */
+@keyframes blinkCaret {
+  from, to { border-color: transparent }
+  50% { border-color: #c7c7c7; }
 }
 
 .social-medias {
