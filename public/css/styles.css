@@ -3,6 +3,57 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
+/*animations*/
+@-webkit-keyframes animTriangles {
+    10% {
+        opacity: 1;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes animTriangles {
+    10% {
+        opacity: 1;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes pulse {
+    50% {
+        background: #444243;
+    }
+}
+
+@keyframes pulse {
+    50% {
+        background: #444243;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinkCaret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #c7c7c7;
+    }
+}
+
 /*header*/
 header {
     background-color: #444243;
@@ -17,15 +68,10 @@ header {
     margin-top:3.75em;
 }
 
-@keyframes animTriangles {
-    10% { opacity: 1 }
-    100% { top: 0px }
-}
-
 .triangle {
     --arrowSize: 6px;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border-left: var(--arrowSize) solid transparent;
     border-right: var(--arrowSize) solid transparent;
     border-bottom: 12px solid #b6b6b6;
@@ -133,18 +179,6 @@ header > :nth-child(9) {
     white-space: nowrap;
     margin: 0 auto;
     animation: typing 3.5s steps(40, end), blinkCaret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blinkCaret {
-  from, to { border-color: transparent }
-  50% { border-color: #c7c7c7; }
 }
 
 .social-medias {
@@ -419,6 +453,42 @@ footer {
 
 #articles .jumbotron {
     background-color: #ececec;
+}
+
+.loading-pulse {
+    position: relative;
+    width: 6px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-animation: pulse 750ms infinite;
+    animation: pulse 750ms infinite;
+    -webkit-animation-delay: 250ms;
+    animation-delay: 250ms;
+    margin: 0 auto;
+}
+
+.loading-pulse:before, .loading-pulse:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 16px;
+    width: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-animation: pulse 750ms infinite;
+    animation: pulse 750ms infinite;
+}
+
+.loading-pulse:before {
+    left: -12px;
+}
+
+.loading-pulse:after {
+    left: 12px;
+    -webkit-animation-delay: 500ms;
+    animation-delay: 500ms;
 }
 
 /* Grow */
