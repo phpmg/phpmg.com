@@ -94,25 +94,24 @@
           <div class="social text-right">
             <a href="http://slack.phpmg.com/">
               <img src="img/Microsoft_Messenger-128.png" class="social-medias space-bet hvr-grow"
-                   alt="simbolo do slack representada por uma tralha colorida">
+                   alt="Slack">
             </a>
 
             <a href="https://www.meetup.com/pt-BR/PHP-MG/">
               <img src="img/meetup-120.png" class="social-medias space-bet hvr-grow"
-                   alt="simbolo do meetup representado pela letra M">
+                   alt="Meetup">
             </a>
 
             <a href="https://www.facebook.com/elephants.mineiros/?fref=ts">
               <img src="img/197-Facebook-128.png" class="social-medias space-bet hvr-grow"
-                   alt="simbolo do facebook representado pela letra F">
+                   alt="Facebook">
             </a>
 
             <a href="https://twitter.com/phpmg" class="animated pulse">
               <img src="img/198-Twitter-128.png" class="social-medias hvr-grow"
-                   alt="simbolo do twitter representado pelo desenho de um passaro">
+                   alt="Twitter">
             </a>
           </div>
-
         </div>
       </div>
     </div>
@@ -177,7 +176,7 @@
             <input type="hidden" name="currency" value="BRL">
             <input type="hidden" name="receiverEmail" value="juniorgro@gmail.com">
             <button type="submit" name="submit"
-                    alt="Pague com PagSeguro - é rápido, grátis e seguro!"
+                    title="Pague com PagSeguro - é rápido, grátis e seguro!"
                     class="btn-section text-style-box hvr-grow">
               doe agora
             </button>
@@ -261,7 +260,7 @@
 <script id="article-tmpl" type="application/x-underscore-template">
   <% _.each(articles, function (article) { %>
   <div class="article col-lg-4 col-md-6 col-sm-6 col-xs-12">
-    <div class="box">
+    <div class="box hvr-grow">
       <% if (article.categories.length) { %>
       <p class="title-top text-style-box">
         <%= article.categories.join(', ') %>
