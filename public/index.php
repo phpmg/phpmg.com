@@ -191,7 +191,7 @@
       <div>
         <div class="col-sm-9">
           <p class="text-footer">
-            © 2017 PHP MG - Grupo de Desenvolvedores de PHP de Minas Gerais | <span class="color">phpmg.com</span>
+            © <?php echo date('Y'); ?> PHP MG - Grupo de Desenvolvedores de PHP de Minas Gerais | <span class="color">phpmg.com</span>
           </p>
         </div>
 
