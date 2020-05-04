@@ -191,7 +191,7 @@
       <div>
         <div class="col-sm-9">
           <p class="text-footer">
-            © 2017 PHP MG - Grupo de Desenvolvedores de PHP de Minas Gerais | <span class="color">phpmg.com</span>
+            © <span id="date-year"></span> PHP MG - Grupo de Desenvolvedores de PHP de Minas Gerais | <span class="color">phpmg.com</span>
           </p>
         </div>
 
@@ -228,6 +228,16 @@
 
   ga('create', 'UA-742902-18', 'auto');
   ga('send', 'pageview');
+</script>
+
+<script>
+  getYear();
+
+  function getYear(){
+    const now       = new Date();
+    const dateYear  = now.getFullYear();
+    document.getElementById('date-year').innerHTML = dateYear;  
+  }
 </script>
 
 <script id="event-tmpl" type="application/x-underscore-template">
